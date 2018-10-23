@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    password: ToKreDi*nJ
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@10.192.19.163:1521/orcl
+    username: ZHFTYJJCPT
+
+
+security:
+  basic:
+    enabled: false
+
+server:
+  servlet:
+    session:
+      timeout: 30
+
+logging:
+  level:
+    root: INFO
