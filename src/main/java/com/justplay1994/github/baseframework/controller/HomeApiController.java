@@ -26,7 +26,7 @@ public class HomeApiController implements HomeApi {
     }
 
     @Override
-    public String index() {
+    public String index(String code) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
         return "welcome，"+currentPrincipalName;

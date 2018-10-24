@@ -58,7 +58,8 @@ public interface HomeApi {
     public void getHome(HttpServletResponse response) throws IOException;
 
     @ApiOperation(value = "根目录请求", notes = "根目录请求")
+    @ApiImplicitParam(name="授权码", value = "123",paramType = "query", required = true, dataType = "string")
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String index();
+    public String index(String code);
 
 }
